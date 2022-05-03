@@ -11,7 +11,7 @@ const TopBanner = () => {
             <Container id="home" className="text-light " fluid>
                 <Row className=" d-flex align-items-center text-light offset-1 mt-5">
                     <Col data-aos="zoom-out" className=" pt-5" md={6}>
-                        <h1 className="display-3" >INTRODUCING CAR DEALER <br /> FOR YOUR INVENTORIES </h1>
+                        <h1 className="display-3" >INTRODUCING ELECTRO DEALERS <br /> FOR YOUR INVENTORIES </h1>
                         <Row>
                             <span >
                                 <h1 className="ml-4 display-3" >

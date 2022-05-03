@@ -17,7 +17,7 @@ const Footer = () => {
                         </div>
                         <div className="d-flex">
                             <img style={{ width: '50px' }} src={logo} alt="" />
-                            <h4 className="text-light mt-2 ml-2">Automotive</h4>
+                            <h4 className="text-light mt-2 ml-2">ELECTRO INVO..</h4>
                         </div>
                         <p className="text-light mt-4 w-100">By subscribing to our company newsletter you will always be up-to-date on our latest promotions, deals and vehicle inventory!.</p>
                     </div>
@@ -35,12 +35,11 @@ const Footer = () => {
                     <div>
                         <div className='about'>
                             <h3>Our Address</h3>
-                            <h5>Bashundhara, Dhaka <br />  Bangladesh</h5>
+                            <h5>DHAKA <br />  Bangladesh</h5>
                             <br />
                             <br />
                             <h4>Founder</h4>
-                            <h5>Jawad Jisan</h5>
-                            <h5>Mazharul Islam</h5>
+                            <h5>ZAHID MIRAN</h5>
                         </div>
                     </div>
                     

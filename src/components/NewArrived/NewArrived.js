@@ -8,7 +8,7 @@ const NewArrived = () => {
         <div id="About" className="mt-5 pt-5 text-light" >
             <div className="mt-5">
                 <div className="text-center">
-                    <h1 className="text-light display-2">Newly Arrived in Warehouse</h1>
+                    <h1 className="text-light display-2">Newly Arrived in ELECTRO INVO..</h1>
                 </div>
                 <div className="row mx-3 d-flex justify-content-center">
                     <div style={{ backgroundColor: "#050c1a", border: "1px solid white" }} className="card focus shadow-lg col-md-2 m-3">

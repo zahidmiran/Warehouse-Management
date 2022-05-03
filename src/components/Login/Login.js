@@ -67,41 +67,6 @@ const Login = () => {
 
     console.log(user);
 
-    // const handleSignInGoogle = () =>{
-    //     signInWithGoogle()
-    //     if(logedUser){
-    //         const email = logedUser?.displayName
-    //       const {data} = axios.post('http://localhost:5000/getToken', {email});
-    //       console.log(data);
-    //       localStorage.setItem('accessToken', data.accessToken);
-    //       navigate(from, { replace: true });
-    // }
-    // }
-    
-    // const handleSignInGoogle = () =>{
-    //     signInWithGoogle()
-    //     if(logedUser){
-    //         const url = 'https://sleepy-peak-49552.herokuapp.com/login';
-
-    //          fetch(url, {
-    //         method: 'POST',
-    //         body: JSON.stringify({ 
-    //             email: logedUser?.email
-    //         }),
-    //         headers: {
-    //             'Content-type': 'application/json; charset=UTF-8',
-    //         },
-    //     })
-    //         .then((response) => response.json())
-    //         .then((data) => {
-    //             console.log(data)
-    //             localStorage.setItem('accessToken', data.token);
-    //             navigate(from, { replace: true });
-    //         });
-    // }
-    // }
-
-
 
     useEffect(()=>{
         const error = googleError || fbError || emailPassError;
