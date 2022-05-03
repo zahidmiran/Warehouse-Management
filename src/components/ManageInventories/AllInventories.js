@@ -31,7 +31,7 @@ const AllInventories = (props) => {
 
         const proceed = window.confirm('Are you sure??')
         if (proceed) {
-            const url = `https://sheltered-stream-56750.herokuapp.com/service/${id}`;
+            const url = `https://sleepy-peak-49552.herokuapp.com/service/${id}`;
             fetch(url, {
                 method: 'DELETE'
             })

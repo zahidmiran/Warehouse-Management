@@ -19,7 +19,7 @@ const SingleInventory = () => {
 
 
     useEffect(() => {
-        fetch('https://sheltered-stream-56750.herokuapp.com/inventories')
+        fetch('https://sleepy-peak-49552.herokuapp.com/inventories')
             .then(res => res.json())
             .then(data => setInventoriesItem(data))
     }, [])
@@ -39,7 +39,7 @@ const SingleInventory = () => {
              name, price, imageURL, quantity, email:user?.email
          }
          console.log(order)
-         axios.post('https://sheltered-stream-56750.herokuapp.com/deliveredNAME', order)
+         axios.post('https://sleepy-peak-49552.herokuapp.com/deliveredNAME', order)
          .then(response => {
              const {data} = response;
              if(data.insertedId){
@@ -57,7 +57,7 @@ const SingleInventory = () => {
     console.log(name, quantity)
 
     // fetch(`http://localhost:4000/inventorie/${serviceId}`, {
-    fetch(`https://sheltered-stream-56750.herokuapp.com/inventorie/${serviceId}`, {
+    fetch(`https://sleepy-peak-49552.herokuapp.com/inventorie/${serviceId}`, {
         method: "PUT",
         headers: {
           "Content-Type": "application/json",

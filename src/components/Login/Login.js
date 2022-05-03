@@ -57,7 +57,7 @@ const Login = () => {
           const password = passwordRef.current.value;
           await signInWithEmailAndPassword(email, password);
         //   const {data} = await axios.post('http://localhost:5000/getToken', {email});
-          const {data} = await axios.post('https://sheltered-stream-56750.herokuapp.com/getToken', {email});
+          const {data} = await axios.post('https://sleepy-peak-49552.herokuapp.com/getToken', {email});
           console.log(data);
           localStorage.setItem('accessToken', data.accessToken);
           navigate(from, { replace: true });
@@ -81,7 +81,7 @@ const Login = () => {
     // const handleSignInGoogle = () =>{
     //     signInWithGoogle()
     //     if(logedUser){
-    //         const url = 'https://sheltered-stream-56750.herokuapp.com/login';
+    //         const url = 'https://sleepy-peak-49552.herokuapp.com/login';
 
     //          fetch(url, {
     //         method: 'POST',
