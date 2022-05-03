@@ -13,7 +13,7 @@ const Header = () => {
     return (
            <Navbar style={{ backgroundColor: "#050c1a", color: "white" }} collapseOnSelect expand="lg" variant="dark" fixed ="top">
            <img style={{ width: '50px' }} src={logo} alt="" />
-                <Navbar.Brand as={Link} to='/'><strong className="pl-1 h2">AUTOMOTIVE..</strong></Navbar.Brand>
+                <Navbar.Brand as={Link} to='/'><strong className="pl-1 h2">Electro Invo..</strong></Navbar.Brand>
             <Navbar.Toggle aria-controls="responsive-navbar-nav" />
             <Navbar.Collapse id="responsive-navbar-nav">
                 <Nav className="me-auto"/>
