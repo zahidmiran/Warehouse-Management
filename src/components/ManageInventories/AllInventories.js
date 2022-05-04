@@ -9,24 +9,6 @@ const AllInventories = (props) => {
     // console.log(_id)
     const [inventoriesItem, setInventoriesItem] = useInventories()
     
-    // console.log(inventoriesItem._id, 'from all inventoryes')
-    // console.log(item._id, 'from all inventoryes')
-
-    // const deletInventories = id => {
-    //     const proceed = window.confirm('Want to delet Inventory?')
-    //     if (proceed) {
-    //         // const url = `http://localhost:5000//inventory/${id}`
-    //         fetch(`http://localhost:5000/inventory/${id}`, {
-    //             method: 'DELETE',
-    //         })
-    //             .then(res => res.json())
-    //             .then(data => {
-    //                 console.log(data);
-    //                 const remaining = inventoriesItem.filter(item => item._id !== id);
-    //                 setInventoriesItem(remaining);
-    //             })
-    //     }
-    // }
     const handleDelet = id => {
 
         const proceed = window.confirm('Are you sure??')
