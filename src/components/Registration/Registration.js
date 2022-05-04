@@ -6,6 +6,7 @@ import auth from '../../firebase.init';
 import { FaGoogle   } from 'react-icons/fa'
 import toast, { Toaster } from 'react-hot-toast';
 import './Registration.css'
+import Loading from '../Loading/Loading';
 
 
 
@@ -53,6 +54,12 @@ const Registration = () => {
             toast("Email didn't Match!!")
         }
     }
+
+    if (googleLoading) {
+        return <Loading />
+    }
+
+
     useEffect(()=>{
         const errors = googleError || error ;
         if(errors){

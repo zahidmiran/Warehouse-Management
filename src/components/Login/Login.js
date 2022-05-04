@@ -8,6 +8,7 @@ import auth from '../../firebase.init';
 import toast, { Toaster } from 'react-hot-toast';
 import { signOut } from 'firebase/auth';
 import axios from 'axios';
+import Loading from '../Loading/Loading';
 
 
 
@@ -37,6 +38,12 @@ const Login = () => {
       if(user || googleUser || fbUser ){
         navigate(from, {replace: true});
     }
+
+    
+    if (googleLoading || loading) {
+        return <Loading />
+    }
+
 
     const forgotPassword = async () =>{
         const email = emailRef.current.value;
