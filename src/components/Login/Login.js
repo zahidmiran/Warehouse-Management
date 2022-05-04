@@ -40,9 +40,7 @@ const Login = () => {
     }
 
     
-    if (googleLoading || loading) {
-        return <Loading />
-    }
+   
 
 
     const forgotPassword = async () =>{
@@ -94,6 +92,10 @@ const Login = () => {
               });
         }
     },[googleError, fbError,emailPassError ])
+
+    if (googleLoading || loading) {
+        return <Loading />
+    }
 
 
    
