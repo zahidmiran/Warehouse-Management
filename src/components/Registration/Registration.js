@@ -55,10 +55,7 @@ const Registration = () => {
         }
     }
 
-    if (googleLoading) {
-        return <Loading />
-    }
-
+ 
 
     useEffect(()=>{
         const errors = googleError || error ;
@@ -79,6 +76,11 @@ const Registration = () => {
               });
         }
     },[googleError, error])
+
+
+    if (googleLoading || loading) {
+        return <Loading />
+    }
 
 
     return (
