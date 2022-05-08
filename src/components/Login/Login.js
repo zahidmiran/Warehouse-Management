@@ -39,10 +39,6 @@ const Login = () => {
         navigate(from, {replace: true});
     }
 
-    
-   
-
-
     const forgotPassword = async () =>{
         const email = emailRef.current.value;
         if(email){
@@ -57,20 +53,51 @@ const Login = () => {
     // if user will first registee and than see her added items then he will see her items properly
       const handleSubmit = async event =>{
           event.preventDefault();
-
           const email = emailRef.current.value;
           const password = passwordRef.current.value;
           await signInWithEmailAndPassword(email, password);
         //   const {data} = await axios.post('http://localhost:5000/getToken', {email});
-          const {data} = await axios.post('https://sleepy-peak-49552.herokuapp.com/getToken', {email});
-          console.log(data);
+          const {data} = await axios.post('http://localhost:5000/getToken', {email});
+          console.log(data.accessToken);
           localStorage.setItem('accessToken', data.accessToken);
           navigate(from, { replace: true });
     }
-
-
-
     console.log(user);
+
+    // const handleSignInGoogle = () =>{
+    //     signInWithGoogle()
+    //     if(logedUser){
+    //         const email = logedUser?.displayName
+    //       const {data} = axios.post('http://localhost:5000/getToken', {email});
+    //       console.log(data);
+    //       localStorage.setItem('accessToken', data.accessToken);
+    //       navigate(from, { replace: true });
+    // }
+    // }
+    
+    // const handleSignInGoogle = () =>{
+    //     signInWithGoogle()
+    //     if(logedUser){
+    //         const url = 'http://localhost:5000/login';
+
+    //          fetch(url, {
+    //         method: 'POST',
+    //         body: JSON.stringify({ 
+    //             email: logedUser?.email
+    //         }),
+    //         headers: {
+    //             'Content-type': 'application/json; charset=UTF-8',
+    //         },
+    //     })
+    //         .then((response) => response.json())
+    //         .then((data) => {
+    //             console.log(data)
+    //             localStorage.setItem('accessToken', data.token);
+    //             navigate(from, { replace: true });
+    //         });
+    // }
+    // }
+
 
 
     useEffect(()=>{
@@ -92,7 +119,6 @@ const Login = () => {
               });
         }
     },[googleError, fbError,emailPassError ])
-
     if (googleLoading || loading) {
         return <Loading />
     }

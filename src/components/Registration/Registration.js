@@ -54,9 +54,6 @@ const Registration = () => {
             toast("Email didn't Match!!")
         }
     }
-
- 
-
     useEffect(()=>{
         const errors = googleError || error ;
         if(errors){
@@ -76,8 +73,6 @@ const Registration = () => {
               });
         }
     },[googleError, error])
-
-
     if (googleLoading || loading) {
         return <Loading />
     }

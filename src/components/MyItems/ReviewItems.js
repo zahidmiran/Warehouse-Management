@@ -15,7 +15,23 @@ const ReviewItem = ({ collectedItems, handleDelete }) => {
     return (
         // <div className='review-item'>
         <div className='review-container'>
-           
+            {/* <div className='mx-1'>
+                <img src={imageURL} alt="" />
+            </div>
+            <div className="review-item-details-container">
+                <div className="review-item-details">
+                    <p className="product-name" title={name}>
+                        {name}
+                    </p>
+                    <p>Price: <span className='orange-color'>${price}</span></p>
+                    <p><small>Quantity: {quantity}</small></p>
+                </div>
+                <div className="delete-container">
+                    <button onClick={() => handleDelete(collectedItems?._id)} className='delete-button'>
+                        <FontAwesomeIcon className='delete-icon' icon={faTrashAlt}></FontAwesomeIcon>
+                    </button>
+                </div>
+            </div> */}
             <Table striped bordered hover className='table-con'>
                 <thead>
                     <tr className='text-center t-header align-center items-center' >

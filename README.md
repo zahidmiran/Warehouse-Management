@@ -6,9 +6,11 @@ Website Name : Inventories ||| A-Z Invo..
 
 https://warehouse-management-a6773.web.app/
 
+
 # Server site Link
 
-https://sleepy-peak-49552.herokuapp.com/
+http://localhost:5000/
+http://localhost:5000/
 
 # About this Website
 
