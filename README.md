@@ -9,8 +9,8 @@ https://warehouse-management-a6773.web.app/
 
 # Server site Link
 
-http://localhost:5000/
-http://localhost:5000/
+https://sleepy-peak-49552.herokuapp.com/
+https://sleepy-peak-49552.herokuapp.com/
 
 # About this Website
 
